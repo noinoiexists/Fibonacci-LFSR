@@ -23,7 +23,7 @@ At each iteration, the register is shifted to the right and the previous output 
 The least significant bit at each stage is the output to the bit stream.  
 
 ## Usage
-The `lfsr.c` file contains the core funcitoning of the LFSR and the `main.c` file utilises it in an example application by taking user input.  
+The `lfsr.c` file contains the core funcitoning of the LFSR and the `main.c` file utilises it in an example application by taking user input. Follow these steps to try it:   
 - Clone this repository:  
   ```sh
   git clone https://github.com/noinoiexists/Fibonacci-LFSR-in-C.git && cd Fibonacci-LFSR-in-C/src/
@@ -40,8 +40,11 @@ Seed:
 10110
 Feedback coefficients:
 11100
-Length of bitstream required:
+Length of bit stream required:
 9
 ```
 **Output**:  
-`011010101`
+`011010101`  
+
+## Licence
+This implementation was created by me, [noinoiexists](https://github.com/noinoiexists) and is protected under the MIT Licence. You can read more about it in the [LICENCE](https://github.com/noinoiexists/Fibonacci-LFSR-in-C/blob/main/LICENSE) file.
