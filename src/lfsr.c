@@ -1,8 +1,6 @@
 #include <stdint.h>
 #include <stdlib.h>
-
-typedef uint8_t Bit;
-typedef uint32_t LFSRState;
+#include "lfsr.h"
 
 void lfsr_shift(LFSRState *state, Bit feedback_bit, size_t m){
 	*state = *state >> 1;
