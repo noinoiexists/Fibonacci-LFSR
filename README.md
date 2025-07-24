@@ -20,7 +20,7 @@ In general:
 s_{i+m} \equiv \sum_{j=0}^{m-1} p_j s_{i+j}\;mod 2;\;\;s_i, p_j \in {0,1};\;i=0,1,...
 ```
 At each iteration, the register is shifted to the right and the previous output bit is made the leftmost bit.  
-The least significant bit at each stage is the output of the bit stream.  
+The least significant bit at each stage is the output to the bit stream.  
 
 ## Usage
 The `lfsr.c` file contains the core funcitoning of the LFSR and the `main.c` file utilises it in an example application by taking user input.  

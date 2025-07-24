@@ -16,7 +16,7 @@ int main() {
 		printf("Lengths have to be equal\n");
 		return 1;
 	}
-	printf("Length of bitstream required:\n");
+	printf("Length of bit stream required:\n");
 	scanf("%ld", &n);
 
 	LFSRState state = str_to_bin(state_str);
