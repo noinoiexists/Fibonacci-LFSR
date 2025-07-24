@@ -7,16 +7,16 @@ LFSRState str_to_bin(char *str);
 int main() {
 	size_t n;
 	char state_str[MAX_LENGTH];
-	printf("Enter the seed:\n");
+	printf("Seed:\n");
 	scanf("%s", state_str);
 	char coeff_str[strlen(state_str)];
-	printf("Enter the feedback coefficients:\n");
+	printf("Feedback coefficients:\n");
 	scanf("%s", coeff_str);
 	if(strlen(coeff_str) != strlen(state_str)){
 		printf("Lengths have to be equal\n");
 		return 1;
 	}
-	printf("Enter length of bitstream required:\n");
+	printf("Length of bitstream required:\n");
 	scanf("%ld", &n);
 
 	LFSRState state = str_to_bin(state_str);
