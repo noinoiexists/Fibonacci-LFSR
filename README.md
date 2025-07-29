@@ -1,7 +1,7 @@
 # Fibonacci LFSR
 This repository contains an implementation of the Fibonaci Linear Feedback Shift Register (LFSR) in C, along with a known-plaintext attack. This was created for educational cryptographic experimentation. 
 
-## What is it  
+## What is LFSR 
 An LFSR is one of the many ways to create a pseudo-random number generator. It generates a stream of bits, from a linear function (here, XOR) of the previous state of bits.  
 It consists of two core components:  
 - **State**: a binary register of $`m`$ bits
