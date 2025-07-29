@@ -1,6 +1,6 @@
 #include <stdint.h>
 #include <stdlib.h>
-#include "lfsr.h"
+#include "../includes/lfsr.h"
 
 void lfsr_shift(LFSRState *state, Bit feedback_bit, size_t m){
 	*state = *state >> 1;
