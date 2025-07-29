@@ -13,7 +13,7 @@ A constant set of feedback coefficients is also set with values  $`p_{m-1},..., 
 
 The output bit of the LFSR $`s_m`$, which is also the input to the leftmost position on the register, can be computed by the XOR-sum of the products of the state bit and corresponding feedback coefficient:
 ```math
-s_m \equiv s_{m-1}p_{m-1} +...+ s_{1}p_{1} + s_{0}p_{0}\;mod 2;\\e
+s_m \equiv s_{m-1}p_{m-1} +...+ s_{1}p_{1} + s_{0}p_{0}\;mod 2;
 ```
 In general:  
 ```math
@@ -23,7 +23,8 @@ At each iteration, the register is shifted to the right and the previous output 
 The least significant bit at each stage is the output to the bit stream.  
 
 ### Encrypting using LFSR
-The LFSR can be used in the form of a stream cipher. The bit stream generated from an LFSR can be used to encrypt data as done in this implementation. Every 8 bits from the stream is grouped together and XORed with the corresponding byte from the input plaintext. The resultant is printed as hex to ensure portability.
+The LFSR can be used in the form of a stream cipher. The bit stream generated from an LFSR can be used to encrypt data as done in this implementation. Every 8 bits from the stream is grouped together and XORed with the corresponding byte from the input plaintext. The resultant is printed as hex to ensure portability.  
+This cipher is definitely **not** safe. An attack is demonstrated below.
 
 ## Known-Plaintext Attack
 The fact that an LFSR uses a simple linear relation between the state bits and feedback coefficients can be exploited. If the register length $`m`$ is assumed to be known, and also the first $`2m`$ bits of the plaintext are known, this powerful attack can be used. In fact, even if $`m`$ isn't exactly known, using a modern computer to loop through multiple values to find $`m`$ is quick.  
