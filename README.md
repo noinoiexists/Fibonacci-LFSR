@@ -51,7 +51,7 @@ You can try out this cipher as well as the attack using this repository. Follow 
   ```
 - Compile the code:
   ```sh
-  gcc src/lfsr.c src/cipher.c -o cipher -Wall -Wextra && gcc src/lfsr.c src/gf2-gaussian-elimination.c attacks/known-plaintext-attack.c -o attack -Wall -Wextra
+  gcc src/lfsr.c src/cipher.c -o cipher -Wall -Wextra ; gcc src/lfsr.c src/gf2-gaussian-elimination.c attacks/known-plaintext-attack.c -o attack -Wall -Wextra
   ```
 - Use the tools with `./cipher` and `./attack`
 
