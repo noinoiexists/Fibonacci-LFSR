@@ -87,4 +87,5 @@ Go placidly amid the noise and the haste, and remember what peace there may be i
 As demonstrated above, the full plaintext could be cracked from the encrypted text just by knowing the first word "Go".
 
 ## Licence
-This implementation was created by me, [noinoiexists](https://github.com/noinoiexists) and is protected under the MIT Licence. You can read more about it in the [LICENCE](https://github.com/noinoiexists/Fibonacci-LFSR-in-C/blob/main/LICENSE) file.
+This implementation was created by me, [Nithik R](https://github.com/noinoiexists) and is protected under the MIT Licence. You can read more about it in the [LICENCE](https://github.com/noinoiexists/Fibonacci-LFSR-in-C/blob/main/LICENSE) file.
+
